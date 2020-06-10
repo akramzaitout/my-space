@@ -11,7 +11,6 @@
                 <v-alert
                     elevation="6"
                     colored-border
-                    dismissible
                     color="primary"
                     icon="mdi-clock-fast"
                     border="left"
