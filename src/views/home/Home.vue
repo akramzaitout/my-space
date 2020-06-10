@@ -18,7 +18,10 @@
     <v-container
 
         fill-height>
-      <transition name="slide-in-down" appear appear-active-class="animate__animated animate__bounceIn">
+      <transition 
+        name="slide-in-down" 
+        appear 
+        appear-active-class="animate__animated animate__bounceIn">
         <v-row
           justify="center"
           :align="( $vuetify.breakpoint.mdAndDown ) ? 'center' : 'start'">

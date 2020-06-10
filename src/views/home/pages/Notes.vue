@@ -17,7 +17,7 @@
                 cols="12"
             >
                 <v-card  
-                    color="divColor"
+                    elevation="7"
                     height="100%"
                     width="100%"
                     class="pa-5">
@@ -74,7 +74,6 @@
              <v-hover>
                 <template v-slot="{ hover }">
                     <v-card 
-                    color="divColor"
                     :elevation="(hover) ? 24 : 12"
                     class="ma-12 pa-8">
                         <span class="font-weight-bold headline"> You have no notes {{ ($vuetify.theme.isDark )  ? '🤷' : '🤷‍♂️' }}</span>

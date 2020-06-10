@@ -16,7 +16,7 @@
                 md="3"
                 cols="12">
                 <v-card  
-                    color="divColor"
+                    elevation="7"
                     height="100%"
                     width="100%"
                     class="pa-5"

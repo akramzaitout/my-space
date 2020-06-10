@@ -14,7 +14,7 @@
           </v-list-item-avatar>
 
           <v-list-item-content>
-            <v-list-item-title class="font-weight-bold title white--text">My space</v-list-item-title>
+            <v-list-item-title class="font-weight-bold title white--text">My Space</v-list-item-title>
           </v-list-item-content>
 
           <v-list-item-icon>

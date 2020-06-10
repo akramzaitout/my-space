@@ -11,7 +11,7 @@ export default {
         navItems : [
             { name : null , title : 'Home' , icon : 'view-dashboard' },
             { name : "note" , title: 'Notes', icon: 'note' },
-            { name : "task" , title: 'Tasks', icon: 'cow' },
+            { name : "task" , title: 'Tasks', icon: 'format-list-bulleted' },
             { name : "event" , title: 'Events', icon: 'calendar' },
         ]
     },

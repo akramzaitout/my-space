@@ -1,11 +1,12 @@
 <template>
-  <v-row 
-    class="page"
-  >
+  <v-row
+    :class="(!$vuetify.breakpoint.mdAndDown ? 'mt-12' : '')">
       <v-col
+        v-if="tasks.length > 0" 
         cols="12">
-          <v-card 
-            color="divColor">
+          <v-card
+            elevation="3"
+          >
             <v-row
               align="center"
               justify="center">
@@ -35,7 +36,6 @@
             class="mb-12"
             cols="12">
             <v-card
-              color="divColor"
               class="pa-5">
                 <v-list
                   color="transparent"
@@ -84,7 +84,7 @@
                 </v-list>
                 <span 
                   v-if="tasks.length <= 0" 
-                  class="font-weight-bold headline ma-5"
+                  class="font-weight-bold headline ma-10"
                 > 
                   You have no tasks {{ ($vuetify.theme.isDark )  ? '🤷' : '🤷‍♂️' }}
                 </span>

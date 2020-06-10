@@ -1,6 +1,8 @@
 <template>
     <v-card
-      min-height="700"
+      :min-height="windowHeight-50"
+      v-resize="onResize"
+      style="position: fixed;"
       outlined
       color="primary">
 
@@ -70,9 +72,13 @@
       user
     },
     data: () => ({
-      isDark:false
+      isDark:false,
+      windowHeight:0
     }),
     methods : {
+      onResize() {
+        this.windowHeight = window.innerHeight
+      },
       ...mapMutations( 'home', [
         'setPageName',
       ]),
@@ -91,6 +97,10 @@
     },
     created:function() {
       this.setPageName(Router.currentRoute.name);
-    }
+    },
+    mounted: function(){
+      this.onResize();
+    },
+    
   }
 </script>
