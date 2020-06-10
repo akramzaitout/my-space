@@ -57,6 +57,8 @@
   import { mapMutations , mapState , mapActions } from 'vuex';
   import Router from '@/router/'; 
 
+  import navItems from '@/navItems.json'
+
   import user from '@/components/user.vue'
 
   import actionNoteComponent from '@/components/actions/note'
@@ -73,6 +75,7 @@
     },
     data: () => ({
       isDark:false,
+      navItems,
       windowHeight:0
     }),
     methods : {
@@ -92,7 +95,6 @@
       ...mapState( 'home' , [
         'pageName',
         'snackbar',
-        'navItems'
       ])
     },
     created:function() {

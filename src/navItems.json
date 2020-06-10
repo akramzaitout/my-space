@@ -1,0 +1,6 @@
+[
+    { "name" : null , "title" : "Home" , "icon" : "view-dashboard" },
+    { "name" : "note" , "title": "Notes", "icon": "note" },
+    { "name" : "event" , "title": "Events", "icon": "calendar" },
+    { "name" : "task" , "title": "Tasks", "icon": "format-list-bulleted" }
+]

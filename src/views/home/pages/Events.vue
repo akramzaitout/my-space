@@ -16,7 +16,7 @@
                 md="3"
                 cols="12">
                 <v-card  
-                    elevation="7"
+                    elevation="15"
                     height="100%"
                     width="100%"
                     class="pa-5"
@@ -125,14 +125,19 @@
   
     </v-row>
 
-    <v-row v-else>
-        <v-col cols="12">
+    <v-row 
+        :class="(!$vuetify.breakpoint.mdAndDown ? 'mt-12' : '')"
+        v-else
+    >
+        <v-col 
+            class="mb-12"
+            cols="12">
              <v-hover>
                 <template v-slot="{ hover }">
                     <v-card 
                     :elevation="(hover) ? 24 : 12"
-                    class="ma-12 pa-8">
-                        <span class="font-weight-bold headline"> You have no events {{ ($vuetify.theme.isDark )  ? '🤷' : '🤷‍♂️' }}</span>
+                    class="pa-5">
+                        <span class="font-weight-bold headline ma-10"> You have no events {{ ($vuetify.theme.isDark )  ? '🤷' : '🤷‍♂️' }}</span>
                     </v-card>
                 </template>
             </v-hover>

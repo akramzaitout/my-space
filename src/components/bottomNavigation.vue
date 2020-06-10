@@ -28,9 +28,13 @@
 <script>
 
 import { mapState, mapMutations, mapActions } from 'vuex';
+import navItems from '@/navItems.json'
 
 export default {
     name : 'bottomNavigation' ,
+    data : () => ({
+        navItems
+    }),
     methods: {
         ...mapActions('home', [ 
             'openDialog' 
@@ -41,7 +45,6 @@ export default {
     },
     computed: {
         ...mapState('home', [ 
-            'navItems',
             'pageName'
         ])
     }
